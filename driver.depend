@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1621723915 source:c:\users\pichau\onedrive\documentos\univali_2021\so\m2\teste\driver\cpu.c
+	<stdio.h>
+	"task.h"
+
+1621723915 c:\users\pichau\onedrive\documentos\univali_2021\so\m2\teste\driver\task.h
+
+1621738124 source:c:\users\pichau\onedrive\documentos\univali_2021\so\m2\teste\driver\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"schedulers.h"
+
+1621723915 c:\users\pichau\onedrive\documentos\univali_2021\so\m2\teste\driver\list.h
+	"task.h"
+
+1621742062 c:\users\pichau\onedrive\documentos\univali_2021\so\m2\teste\driver\schedulers.h
+	"list.h"
+
+1621741806 source:c:\users\pichau\onedrive\documentos\univali_2021\so\m2\teste\driver\list.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"list.h"
+
