@@ -22,20 +22,25 @@ void insert(struct node **head, Task *newTask) {
 
 
 
+
     //printf("endereço de head: %d \n\n",&head);
 }
 
 // delete the selected task from the list
 void delete(struct node **head, Task *task) {
+
     struct node *temp;
     struct node *prev;
 
+
     temp = *head;
+    //printf("%s %s", task->name, temp->task->name);
     // special case - beginning of list
+
     if (strcmp(task->name,temp->task->name) == 0) {
         *head = (*head)->next;
     }
-    else {
+   else {
         // interior or last element in the list
         prev = *head;
         temp = temp->next;
@@ -45,6 +50,7 @@ void delete(struct node **head, Task *task) {
         }
 
         prev->next = temp->next;
+
     }
 }
 
@@ -57,7 +63,7 @@ void traverse(struct node *head) {
         if (temp == NULL){
             break;
         }else{
-             printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
+             printf("\n [%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
             temp = temp->next;
         }
 

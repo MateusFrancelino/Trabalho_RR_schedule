@@ -9,8 +9,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #include "schedulers.h"
+
 
 #define SIZE    100
 
@@ -51,10 +51,10 @@ int main(int argc, char *argv[])
     }
 
     fclose(in);
-    traverse(inicioNodo);
+   // traverse(inicioNodo);
 
     // invoke the scheduler
-    //schedule();
+    schedule();
 
     return 0;
 }
