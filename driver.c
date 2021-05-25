@@ -40,10 +40,6 @@ int main(int argc, char *argv[])
         priority = atoi(strtok_r(temp,",",&temp));
         burst = atoi(strtok_r(temp,",",&temp));
 
-        //printf("%s",name);
-        //printf("%d",priority);
-        //printf("%d",burst);
-
         // add the task to the scheduler's list of tasks
         add(name,priority,burst);
 
